@@ -32,7 +32,10 @@ data <- read.csv(i_f)
 	#max
 weightmax <- apply(data[2],2,max)
 heightmax <- apply(data[3],2,max)
+weightmax2 <- round(weightmax, digits = 2)
+heightmax2 <- round(heightmax, digits = 2)
+
 
 	#Output summary file--result.csv
-out <- data.frame(set=name,weight=weightmax,height=heightmax)
+out <- data.frame(set=name,weight=weightmax2,height=heightmax2)
 write.csv(out, file = "result.csv", row.names = FALSE)
