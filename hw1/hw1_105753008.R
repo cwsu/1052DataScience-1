@@ -38,4 +38,4 @@ heightmax2 <- round(heightmax, digits = 2)
 
 	#Output summary file--result.csv
 out <- data.frame(set=name,weight=weightmax2,height=heightmax2)
-write.csv(out, file = "result.csv", row.names = FALSE)
+write.csv(out, file = o_f, row.names = FALSE)
