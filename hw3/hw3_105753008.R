@@ -103,8 +103,15 @@ print(contingency_table)
 fisher.test(contingency_table)
 testp<-fisher.test(contingency_table)$p.value
 
+ if( testp < 0.05) {
+   methodname[index[3]] <- paste0(methodname[index[3]], "*")
+  }
+# else {
+#  sec_F1_index <- index[3]
+#}
 
 # output file
 out_data <- rbind(out_data,c(query_m,methodname[index]))
 write.csv(out_data, file=out_f, row.names = F, quote = F)
-
+out_data 
+methodname[index]
