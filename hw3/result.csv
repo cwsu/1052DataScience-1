@@ -1,0 +1,4 @@
+methodname,calsensitivity,calspecificity,calf1,calauc
+method1,0.333333333333333,0.5,0.3125,0.436111111111111
+method2,0.333333333333333,0.625,0.344827586206897,0.377777777777778
+male,method2,method2,method2,NA
