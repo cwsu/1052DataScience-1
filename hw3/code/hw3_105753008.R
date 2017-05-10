@@ -52,8 +52,7 @@ calf1s<-c()
 calaucs<-c()
 for(file in files)
 {
- # methodname<-gsub(".csv", "", basename(file))
- methodname<-file
+ methodname<-gsub(".csv", "", basename(file))
   d<-read.table(file, header=T,sep=",")
   cal<-c( d$prediction,d$reference,query_m)
 
