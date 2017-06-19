@@ -5,7 +5,7 @@ library("ROCR")
 library("ggplot2")
 
 #read files
-data <- read.csv("C:\\Program Files\\R\\R-3.3.1\\bin\\Titanic.csv")
+data <- read.csv("https://raw.githubusercontent.com/jessie-chuang/1052DataScience/master/final%20project/Titanic.csv")
 
 #read field name
 data1 <- subset(data, select = c(PClass, Age, Sex, Survived))
